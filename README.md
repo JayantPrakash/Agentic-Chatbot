@@ -32,7 +32,7 @@ The chatbot is bound to the configured tools. The graph uses LangGraph's `tools_
 flowchart LR
     START([START]) --> CHATBOT[chatbot]
     CHATBOT -->|Tool call| TOOLS[tools]
-    CHATBOT -->|No tool call| END([END])
+    CHATBOT --> END([END])
     TOOLS --> CHATBOT
 ```
 
