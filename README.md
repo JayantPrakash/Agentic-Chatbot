@@ -143,10 +143,6 @@ streamlit run app.py
 - `GraphBuilder.setup_graph()` selects the graph for the exact use-case values `Basic Chatbot`, `Chatbot With Web`, and `AI News`, then returns the compiled graph.
 - The news query targets AI technology news in India and globally, retrieves up to 20 results, and sends the returned article content, URLs, and publication dates to the summarization prompt.
 
-## Security Note
-
-Do not commit API keys to source control. Before deploying or sharing a fork, rotate any previously exposed key and update `src/langgraphagenticai/tools/search_tool.py` to load the Tavily credential from an environment variable rather than source code.
-
 ## Author
 
 [Jayant Prakash](https://github.com/JayantPrakash)
